@@ -2,6 +2,11 @@
 
 FILE="../zmeny.txt"
 
+#cas_na_masine=$(date | awk '{print $4}' | awk -F ":" '{print $1}')
+#sk_cas=$(($cas_na_masine - 2))
+
+#echo "$cas_na_masine"
+
 echo "Zmena vytvorena: $(date)" > $FILE
 echo "Random hash: $(openssl rand -hex 8)" >> $FILE
 
