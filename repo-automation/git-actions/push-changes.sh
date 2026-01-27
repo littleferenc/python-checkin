@@ -1,12 +1,15 @@
 #!/bin/bash
 
+cas_na_masine=$(date | awk '{print $4}' | awk -F ":" '{print $1}')
+sk_cas=$(($cas_na_masine - 2))
+
 cd ..
 
 git add zmeny.txt
 
 git add --all
 
-git commit -m "Automaticka zmena $(date '+%Y-%m-%d %H:%M:%S')"
+git commit -m "Automaticka zmena $(date | awk -F " " '{print $1}') o case $sk_cas"
 
 git push origin script
 
