@@ -9,7 +9,7 @@ git add zmeny.txt
 
 git add --all
  
-git commit -m "Automaticka zmena $(date)"
+git commit -m "Automaticka zmena ku dnu: $(date)"
 
 git push origin script
 
