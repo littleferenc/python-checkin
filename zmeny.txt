@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Zmena vytvorena: Tue Jan 27 11:17:14 MSK 2026
 Random hash: 728b619cca2d9310
+=======
+Zmena vytvorena: Tue Jan 27 10:37:55 MSK 2026
+Random hash: 7b67dfef5ffa7a6c
+>>>>>>> dbe6e7a003f3844da3dd59005d75c7da58816507
