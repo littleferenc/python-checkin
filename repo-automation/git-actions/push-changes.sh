@@ -8,8 +8,8 @@ cd ..
 git add zmeny.txt
 
 git add --all
-
-git commit -m "Automaticka zmena $(date | awk -F " " '{print $1}') o case $sk_cas"
+ 
+git commit -m "Automaticka zmena $(date | awk -F " " '{print $1 $2 $3}') o case $sk_cas"
 
 git push origin script
 
