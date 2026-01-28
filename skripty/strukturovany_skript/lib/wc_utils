@@ -1,0 +1,28 @@
+function calc_chars() {
+  input="${1:-NONEx1st1ng_STR1NG}"
+
+  test "$input" == "NONEx1st1ng_STR1NG" && {
+    echo "Usage: $0 <string>"
+    echo "Exitting..."
+    return 1
+  }
+
+  output="$(echo "$input" | tr -d '\n' | wc -m )"
+  echo "$output"
+}
+
+
+function calc_bytes() {
+#  input="${1:-NONEx1st1ng_STR1NG}"
+
+  test -z "$1" && {
+    echo "Usage: $0 <string>"
+    echo "Exitting..."
+    return 1
+  }
+
+  input="$1"
+  output="$(echo "$input" | tr -d '\n' | wc -m )"
+  echo "$output"
+}
+
